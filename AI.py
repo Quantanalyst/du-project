@@ -31,7 +31,7 @@ class Accidental():
               "The condition of PV cells = {}\nThe condition of batteries = {}\nThe condition of diesel generator = {}\nThe target contingency = {} ".format(self.OPC, self.CBF11,
         self.CBF09, self.Tie, self.Load, self.CHP, self.PV, self.BESSs, self.Diesel, self.Contingency))
 
-    def __plot__(self):
+    def plot(self):
         # perform some action
         print(self.device)
 
