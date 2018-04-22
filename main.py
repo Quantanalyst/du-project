@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+from AI import Accidental
 
 # read the info from HR info excel file
 infoloc = "C:\\Users\\Saeed Mohajeryami\\Dropbox\\DOE project\\Data from Dr\\BCM HIL PI Point List Draft 1 - 20161108.xlsx"
@@ -10,7 +11,8 @@ status = pd.read_excel(infoloc,sheet_name='Status (feedback)')
 setpoint = pd.read_excel(infoloc,sheet_name='Setpoint')
 commands = pd.read_excel(infoloc,sheet_name='Commands')
 
-
+test = Accidental(OPC = 'Normal1',CBF11 = 'Open',CBF09 = 'Open',Tie= 'Open',Load ='Max',CHP ='On',PV ='Off',BESSs ='Off',Diesel ='Off',Contingency ="CBF09" )
+print(test.initialcondition())
 
 
 # print(commands.head())
