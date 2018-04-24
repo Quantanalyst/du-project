@@ -4,10 +4,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from AI import Accidental
 from plotvoltage import PlotVoltage
+from plotcurrent import PlotCurrent
+from plotpower import PlotPower
+from plotgeneration import PlotGeneration
 
 
-pltv = PlotVoltage('F',11)
-pltv.plotvoltage()
+# pltv = PlotVoltage('F',11)
+# pltv.plotvoltage()
+
+# pltc = PlotCurrent('PCL',1)
+# pltc.plotcurrent()
+
+# pltp = PlotPower('L',105)
+# pltp.plotpower()
+
+pltg = PlotGeneration()
+pltg.plotbattery()
 
 
 
